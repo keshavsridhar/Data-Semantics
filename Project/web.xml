@@ -7,17 +7,17 @@
 
     <display-name>Search Application</display-name>
     <description>
-        RDF tree search.
+        RDF tree search/traversal.
     </description>
 
     
     <servlet>
-        <servlet-name>HelloServlet1</servlet-name>
+        <servlet-name>Search</servlet-name>
         <servlet-class>examples.Search</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>HelloServlet1</servlet-name>
+        <servlet-name>Search</servlet-name>
         <url-pattern>/Search</url-pattern>
     </servlet-mapping>
 
