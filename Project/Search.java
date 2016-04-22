@@ -18,7 +18,7 @@ import java.io.*;
  * Simple Hello servlet.
  */
 
-public final class Hello1 extends HttpServlet {
+public final class Search extends HttpServlet {
     /**
      * Respond to a GET request for the content produced by
      * this servlet.
@@ -32,9 +32,9 @@ public final class Hello1 extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
       throws IOException, ServletException {
-    	String name =request.getParameter("fname");
+    	String name =request.getParameter("token");
     //    ResultSet result;
-    	final String infile="C:\\Jena\\Tutorial\\arq\\assignment4.rdf";
+    	final String infile="C:\\Jena\\Tutorial\\arq\\assignment4.rdf"; \\Input file(s) here
     	Model model = ModelFactory.createDefaultModel();
 		InputStream in=FileManager.get().open(infile);
 		if(in==null)
