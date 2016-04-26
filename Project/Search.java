@@ -58,7 +58,7 @@ public final class Search extends HttpServlet {
 	" ?y j.10:firstName ?z ." +
 	" ?y j.10:lastName ?x ." +
 	//" ?y j.3:IUID ?x ." +
-	" FILTER(REGEX(?z," +"\""+ name +"\""+")) " +
+	" FILTER(REGEX(?z," +"\""+ name +"\""+",'i')) " +
 	" } ORDER BY ?z";
 	Query query=QueryFactory.create(queryString);
 	QueryExecution qe= QueryExecutionFactory.create(query,model);
