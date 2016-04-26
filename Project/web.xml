@@ -7,9 +7,8 @@
 
     <display-name>Search Application</display-name>
     <description>
-        RDF tree search/traversal.
+      RDF traversal
     </description>
-
     
     <servlet>
         <servlet-name>Search</servlet-name>
@@ -20,5 +19,16 @@
         <servlet-name>Search</servlet-name>
         <url-pattern>/Search</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>examples.Hello</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/Hello</url-pattern>
+    </servlet-mapping>
+
 
 </web-app> 
