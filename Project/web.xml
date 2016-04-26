@@ -30,5 +30,23 @@
         <url-pattern>/Hello</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Grants</servlet-name>
+        <servlet-class>examples.Grants</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>Grants</servlet-name>
+        <url-pattern>/Grants</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GrantsValue</servlet-name>
+        <servlet-class>examples.GrantsValue</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GrantsValue</servlet-name>
+        <url-pattern>/GrantsValue</url-pattern>
+    </servlet-mapping>
 </web-app> 
