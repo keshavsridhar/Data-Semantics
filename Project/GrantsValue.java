@@ -53,7 +53,7 @@ String queryString= " prefix dc: <http://purl.org/dc/elements/1.1/> "+
 " { "+
 " ?y rdfs:label ?x ." +
 " ?y j.5:totalAwardAmount ?p ." +
-" FILTER(?p > "+"\""+name+"\""+")" +
+" FILTER(xsd:integer(?p) > "+"xsd:integer(\""+name+"\")"+")" +
 	" } ";
 Query query=QueryFactory.create(queryString);
 QueryExecution qe= QueryExecutionFactory.create(query,model);
