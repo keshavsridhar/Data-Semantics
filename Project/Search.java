@@ -32,9 +32,12 @@ public final class Search extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
       throws IOException, ServletException {
+    	
     	String name =request.getParameter("token");
     //    ResultSet result;
-    	final String infile="C:\\Jena\\Tutorial\\arq\\assignment4.rdf"; \\Input file(s) here
+    	//final String infile="C:\\Jena\\Tutorial\\arq\\assignment4.rdf";
+    	//final String infile="C:\\Users\\keshs\\Desktop\\M.S Data Science\\Data Semantics\\sample_subset.xml";
+    	final String infile="C:\\Users\\keshs\\Desktop\\M.S Data Science\\Data Semantics\\2012-05-23_vivo.iu.edu_export.rdf";
     	Model model = ModelFactory.createDefaultModel();
 		InputStream in=FileManager.get().open(infile);
 		if(in==null)
@@ -44,12 +47,19 @@ public final class Search extends HttpServlet {
 		
 		model.read(in,"");
 		String queryString= " prefix dc: <http://purl.org/dc/elements/1.1/> "+
-	" SELECT ?y?z "+
+				" prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>" +
+			" prefix j.10:<http://xmlns.com/foaf/0.1/>" +
+			" prefix j.3:<http://vivo.iu.edu/ontology/iuvivo#>" +
+	" SELECT DISTINCT ?z?x "+
 	" WHERE "+
 	" { "+
-	" ?y dc:title ?z . "+
-	" FILTER(REGEX(?z," +"\""+ name +"\"" + ")) " +
-	" } ORDER BY ?z ";
+	//" ?y dc:title ?z . "+
+	//" ?y rdfs:label ?z . "+
+	" ?y j.10:firstName ?z ." +
+	" ?y j.10:lastName ?x ." +
+	//" ?y j.3:IUID ?x ." +
+	" FILTER(REGEX(?z," +"\""+ name +"\""+")) " +
+	" } ORDER BY ?z";
 	Query query=QueryFactory.create(queryString);
 	QueryExecution qe= QueryExecutionFactory.create(query,model);
 	ResultSet results=qe.execSelect();
