@@ -2,15 +2,25 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Project IU-VIVO</title>
 </head>
 <body>
-<form action="/Hello" method="get">
+<h1> Semantic search on the IU-VIVO dataset:</h1>
+<form action="Hello" method="get">
 <br><br>
-  Get list of all employees:<input type="submit" value="Show"><br><br>
+ List of all employees: <input type="submit" value="Show"><br>
 </form>
+
 <form action="Search" method="get">
   Search employee by last name: <input type="text" name="token">
+  <input type="submit" value="Search"><br><br><br>
+  </form>
+ <form action="Grants" method="get">
+  List of all grants: <input type="submit" value="ListGrants">
+</form>
+
+ <form action="GrantsValue" method="get">
+ Search for grants with funding value greater than: <input type="text" name="value">
   <input type="submit" value="Search">
 </form>
 </body>
