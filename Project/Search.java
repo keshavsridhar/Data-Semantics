@@ -50,13 +50,15 @@ public final class Search extends HttpServlet {
 				" prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>" +
 			" prefix j.10:<http://xmlns.com/foaf/0.1/>" +
 			" prefix j.3:<http://vivo.iu.edu/ontology/iuvivo#>" +
-	" SELECT DISTINCT ?z?x "+
+			" prefix j.5:<http://vivoweb.org/ontology/core#>" +
+	" SELECT DISTINCT ?z?x?p "+
 	" WHERE "+
 	" { "+
 	//" ?y dc:title ?z . "+
 	//" ?y rdfs:label ?z . "+
 	" ?y j.10:firstName ?z ." +
 	" ?y j.10:lastName ?x ." +
+	" ?y j.5:phoneNumber ?p ." +
 	//" ?y j.3:IUID ?x ." +
 	" FILTER(REGEX(?z," +"\""+ name +"\""+",'i')) " +
 	" } ORDER BY ?z";
