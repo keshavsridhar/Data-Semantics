@@ -1,0 +1,8 @@
+prefix dc: <http://purl.org/dc/elements/1.1/>
+
+SELECT ?y?z
+WHERE
+{
+?y dc:title ?z .
+FILTER(REGEX(?z,"The",'i'))
+}

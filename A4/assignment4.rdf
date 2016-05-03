@@ -1,0 +1,58 @@
+<rdf:RDF
+    xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    xmlns:dc='http://purl.org/dc/elements/1.1/'
+    xmlns:vCard='http://random/'
+    >
+    
+    <rdf:Description rdf:about="Author">
+        <vCard:FullName>
+            <rdf:Description rdf:about='J.KRowling'>
+                <vCard:hasAge>50</vCard:hasAge>
+                <vCard:WroteBooks>
+                    <rdf:Description rdf:about='Books'>
+                        <dc:title>Harry Potter and the Philosopher's Stone</dc:title>
+                        <dc:title>Harry Potter and the Chamber of Secrets</dc:title>
+                        <dc:title>Harry Potter and the Prisoner of Azkaban</dc:title>
+                        <dc:title>Harry Potter and the Goblet of Fire</dc:title>
+                        <dc:title>Harry Potter and the Order of Phoenix</dc:title>
+                        <dc:title>Harry Potter and the Half-Blood Prince</dc:title>
+                        <dc:title>Harry Potter and the Deathly Hallows</dc:title>
+                    </rdf:Description>
+                </vCard:WroteBooks>
+            </rdf:Description>
+        </vCard:FullName>
+        
+        <vCard:FullName>
+            <rdf:Description rdf:about='C.Paolini'>
+                <vCard:hasAge>32</vCard:hasAge>
+                <vCard:WroteBooks>
+                    <rdf:Description rdf:about='Books'>
+                        <dc:title>Eragon</dc:title>
+                        <dc:title>Eldest</dc:title>
+                        <dc:title>Brisingr</dc:title>
+                        <dc:title>Inheritance</dc:title>
+                    </rdf:Description>
+                </vCard:WroteBooks>
+            </rdf:Description>
+        </vCard:FullName>
+        
+        <vCard:FullName>
+            <rdf:Description rdf:about='J.Stroud'>
+                <vCard:hasAge>45</vCard:hasAge>
+                <vCard:WroteBooks>
+                    <rdf:Description rdf:about='Books'>
+                        <dc:title>The Ring of Solomon</dc:title>
+                        <dc:title>The Amulet of Samarkand</dc:title>
+                        <dc:title>The Golem's Eye</dc:title>
+                        <dc:title>Ptolemy's Gate</dc:title>
+                    </rdf:Description>
+                </vCard:WroteBooks>
+            </rdf:Description>
+        </vCard:FullName>
+        
+        <vCard:FullName>
+            <rdf:Description rdf:about='KeshavSridhar'>
+            </rdf:Description>
+        </vCard:FullName>
+    </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+prefix vcard: <http://random/>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?x?y?z
+WHERE
+{
+?x vcard:FullName ?y
+OPTIONAL {?y vcard:WroteBooks ?z}
+FILTER(!bound(?z))
+}

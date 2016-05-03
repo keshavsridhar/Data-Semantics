@@ -1,0 +1,7 @@
+prefix vcard: <http://random/>
+SELECT ?x?y
+WHERE
+{
+?x vcard:hasAge ?y
+FILTER(?y="32" || ?y>"45")
+}

@@ -1,0 +1,6 @@
+prefix dc: <http://purl.org/dc/elements/1.1/>
+SELECT ?x
+WHERE
+{
+?y dc:title ?x
+}
