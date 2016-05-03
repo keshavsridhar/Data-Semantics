@@ -1,0 +1,89 @@
+<rdf:RDF
+    xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    xmlns:dc='http://purl.org/dc/elements/1.1/'
+    xmlns:vCard='http://random/'
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    >
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Books.owl"/>
+    <rdf:Description rdf:about="http://www.semanticweb.org/Books.owl#Author">
+        <vCard:FullName>
+            <rdf:Description rdf:about='http://www.w3.org/2002/07/owl#J.KRowling'>
+                <vCard:hasAge>50</vCard:hasAge>
+                <vCard:WroteBooks>
+                    <rdf:Description rdf:about='Books'>
+                        <dc:title>Harry Potter and the Philosopher's Stone</dc:title>
+                        <dc:title>Harry Potter and the Chamber of Secrets</dc:title>
+                        <dc:title>Harry Potter and the Prisoner of Azkaban</dc:title>
+                        <dc:title>Harry Potter and the Goblet of Fire</dc:title>
+                        <dc:title>Harry Potter and the Order of Phoenix</dc:title>
+                        <dc:title>Harry Potter and the Half-Blood Prince</dc:title>
+                        <dc:title>Harry Potter and the Deathly Hallows</dc:title>
+                    </rdf:Description>
+                </vCard:WroteBooks>
+            </rdf:Description>
+        </vCard:FullName>
+        
+        <vCard:FullName>
+            <rdf:Description rdf:about='http://www.w3.org/2002/07/owl#C.Paolini'>
+                <vCard:hasAge>32</vCard:hasAge>
+                <vCard:WroteBooks>
+                    <rdf:Description rdf:about='Books'>
+                        <dc:title>Eragon</dc:title>
+                        <dc:title>Eldest</dc:title>
+                        <dc:title>Brisingr</dc:title>
+                        <dc:title>Inheritance</dc:title>
+                    </rdf:Description>
+                </vCard:WroteBooks>
+            </rdf:Description>
+        </vCard:FullName>
+        
+        <vCard:FullName>
+            <rdf:Description rdf:about='http://www.w3.org/2002/07/owl#J.Stroud'>
+                <vCard:hasAge>45</vCard:hasAge>
+                <vCard:WroteBooks>
+                    <rdf:Description rdf:about='Books'>
+                        <dc:title>The Ring of Solomon</dc:title>
+                        <dc:title>The Amulet of Samarkand</dc:title>
+                        <dc:title>The Golem's Eye</dc:title>
+                        <dc:title>Ptolemy's Gate</dc:title>
+                    </rdf:Description>
+                </vCard:WroteBooks>
+            </rdf:Description>
+        </vCard:FullName>
+        
+        <vCard:FullName>
+            <rdf:Description rdf:about='KeshavSridhar'>
+            </rdf:Description>
+        </vCard:FullName>
+    </rdf:Description>
+    <owl:NamedIndividual rdf:about='http://www.w3.org/2002/07/owl#J.KRowling'>
+        <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#Person'/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about='http://www.w3.org/2002/07/owl#C.Paolini'>
+        <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#Person'/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about='http://www.w3.org/2002/07/owl#J.Stroud'>
+        <rdf:type rdf:resource='http://www.w3.org/2002/07/owl#Person'/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="https://twitter.com/paolini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+        <owl:sameAs rdf:resource="http://dbpedia.org/page/Christopher_Paolini"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q93620"/>
+        <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#C.Paolini"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="http://www.jkrowling.com/en_GB/#/about-jk-rowling">
+        <owl:sameAs rdf:resource="http://dbpedia.org/page/J._K._Rowling"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q34660"/>
+        <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#J.KRowling"/>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="http://www.jonathanstroud.com/about_me.html">
+        <owl:sameAs rdf:resource="http://dbpedia.org/page/Jonathan_Stroud"/>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q358178"/>
+        <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#J.Stroud"/>
+    </owl:NamedIndividual>
+    
+</rdf:RDF>

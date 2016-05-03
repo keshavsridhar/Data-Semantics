@@ -1,0 +1,21 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:link="http://imdb.com/link/">
+  <rdf:Description rdf:about="http://resource/JonathanStroud">
+    <link:authorOf rdf:resource="http://resource/Bartimaeus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource/ChristopherPaolini">
+    <link:authorOf>
+      <rdf:Description rdf:about="http://resource/Inheritance">
+        <link:isMovie rdf:resource="http://resource/EragonMovies"/>
+      </rdf:Description>
+    </link:authorOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource/J.K.Rowling">
+    <link:authorOf>
+      <rdf:Description rdf:about="http://resource/HarryPotter">
+        <link:isMovie rdf:resource="http://resource/HarryPotterMovies"/>
+      </rdf:Description>
+    </link:authorOf>
+  </rdf:Description>
+</rdf:RDF>

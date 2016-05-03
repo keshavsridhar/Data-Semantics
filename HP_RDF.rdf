@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ex="http://examples.org/schema#">
+    
+    <rdf:Description rdf:about="Harry_Potter">
+        <ex:hasName>Harry Potter</ex:hasName>
+        <ex:studiesAt rdf:resource="Hogwarts" />
+        <ex:hasBestFriends>
+            <rdf:Bag>
+                <rdf:li rdf:resource="Hermione_Granger" />
+                <rdf:li rdf:resource="Ron_Weasley" />
+            </rdf:Bag>
+        </ex:hasBestFriends>
+    </rdf:Description>
+</rdf:RDF>
+
